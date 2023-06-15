@@ -145,7 +145,7 @@ a:focus {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/office-background.jpg);
+    url(../images/office-background.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,8 +353,6 @@ a:focus {
 
 .customer-item {
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   width: calc((100% - 120px) / 6);
 }
 
@@ -368,6 +366,8 @@ a:focus {
   transition: border-color var(--transition), color var(--transition);
   width: 100%;
   height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 .customer-icon {
   fill: currentColor;
@@ -455,11 +455,6 @@ a:focus {
   transition: background-color var(--transition);
 }
 
-.portfolio-btn-li {
-  transition: color var(--transition), background-color var(--transition),
-    border-color var(--transition), box-shadow var(--transition);
-}
-
 .portfolio-btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -475,7 +470,8 @@ a:focus {
   padding: 12px 24px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: box-shadow var(--transition);
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition), box-shadow var(--transition);
 }
 .portfolio-btn:hover {
   background-color: var(--portfolio-button-focus-hover);
@@ -611,7 +607,10 @@ a:focus {
   border: none;
   background-color: var(--portfolio-button-focus-hover);
 }
-
+.modal-btn:hover .x-btn,
+.modal-btn:focus .x-btn {
+  fill: #ffffff;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -619,11 +618,6 @@ a:focus {
 }
 .backdrop .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-}
-
-.x-btn {
-  fill: var(--footer-background-color);
-  transition: fill var(--transition);
 }
 
 .window-block {
