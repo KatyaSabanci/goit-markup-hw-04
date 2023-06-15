@@ -611,6 +611,9 @@ a:focus {
 .modal-btn:focus .x-btn {
   fill: #ffffff;
 }
+.x-btn {
+  transition: fill var(--transition);
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
