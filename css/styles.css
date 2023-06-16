@@ -66,9 +66,10 @@ h6 {
 .header-nav {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .header-menu {
-  color: var(--portfolio-button-focus-hover);
+  color: var(--header-color);
   padding: 24px 0;
   display: block;
   transition: color var(--transition);
@@ -373,7 +374,7 @@ a:focus {
   fill: currentColor;
 }
 .customer-link:hover,
-:focus {
+.customer-link:focus {
   color: var(--portfolio-button-focus-hover);
   border-color: var(--portfolio-button-focus-hover);
 }
@@ -548,7 +549,7 @@ a:focus {
 }
 
 .photo-link:hover,
-:focus {
+.photo-link:focus {
   display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
